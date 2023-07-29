@@ -24,3 +24,16 @@ html, body {
     font-size: 1.5rem;
     text-shadow: 3px 3px 5px darkgray;
 }
+
+.links {
+    text-decoration: none;
+    color: rgb(230, 237, 243);
+    padding: 5px;
+    transition: all 0.25s;
+}
+
+.links:hover {
+    background-color: rgb(230, 237, 243);
+    color: rgb(12,17,23);
+    border-radius: 12px;
+}
