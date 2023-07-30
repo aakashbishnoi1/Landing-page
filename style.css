@@ -8,7 +8,7 @@ html, body {
     background-color: darkgrey;
     color: rgb(230, 237, 243);
 }
-
+        /* Navbar style starts here */
 .navbar {
     display: flex;
     height: 80px;
@@ -18,7 +18,7 @@ html, body {
     background-color: rgb(12,17,23);
     padding: 1rem;
 }
-
+        /* Logo syle*/
 @keyframes logo {
     0% {text-shadow: 1px 1px 3px darkgray;}
     50% {text-shadow: 2px 2px 4px darkgray;}
@@ -29,7 +29,7 @@ html, body {
     font-size: 1.5rem;
     animation: logo 3s ease-in-out  infinite;  
 }
-
+        /* Links style */
 .links {
     text-decoration: none;
     color: rgb(230, 237, 243);
@@ -42,3 +42,4 @@ html, body {
     color: rgb(12,17,23);
     border-radius: 12px;
 }
+        /* Main section starts here */
