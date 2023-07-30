@@ -43,3 +43,12 @@ html, body {
     border-radius: 12px;
 }
         /* Main section starts here */
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }  
