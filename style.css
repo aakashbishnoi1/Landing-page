@@ -7,6 +7,7 @@
 html, body {
     background-color: darkgrey;
     color: rgb(230, 237, 243);
+    position: relative;
 }
         /* Navbar style starts here */
 .navbar {
@@ -17,6 +18,10 @@ html, body {
     align-items: center;
     background-color: rgb(12,17,23);
     padding: 1rem;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }
         /* Logo syle*/
 @keyframes logo {
