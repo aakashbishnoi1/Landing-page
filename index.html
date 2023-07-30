@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,20 +20,22 @@
         </div>
     </nav>
     <main class="container">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img class="slide-img" src="images/slide1.jpg" alt="slide1"></div>
-              <div class="swiper-slide"><img class="slide-img" src="images/slide2.jpeg" alt="slide1"></div>
-              <div class="swiper-slide"><img class="slide-img"  src="images/slide3.webp" alt="slide1"></div>
-              ...       
-            <!-- navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>          
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/slide1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/slide2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/slide3.webp" alt=""></div>
+          <div class="swiper-slide"><img src="images/slide4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>   
     </main>
     <footer class="ftr"></footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="index.js"></script> 
+    
 </body>
 </html>
