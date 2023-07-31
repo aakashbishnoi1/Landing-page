@@ -84,3 +84,18 @@ html, body {
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
 }
+
+.child {
+    height: 200px;
+    width: 170px;
+    transition: box-shadow 0.15s;
+}
+
+.child:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+.img {
+    height: inherit;
+    width: inherit; 
+}
