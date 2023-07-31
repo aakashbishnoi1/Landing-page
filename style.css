@@ -109,4 +109,5 @@ html, body {
     top: 25%;
     left: 25%;
     z-index: 2;
+    display: none;
 }
