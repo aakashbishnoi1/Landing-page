@@ -88,6 +88,7 @@ html, body {
 .child {
     height: 200px;
     width: 170px;
+    transition: box-shadow 0.15s;
 }
 
 .child:hover {
