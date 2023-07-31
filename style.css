@@ -83,6 +83,7 @@ html, body {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
+    position: relative;
 }
 
 .child {
@@ -98,4 +99,14 @@ html, body {
 .img {
     height: inherit;
     width: inherit; 
+}
+
+.hidden {
+    background-color: red;
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
 }
