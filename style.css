@@ -57,20 +57,30 @@ html, body {
 .swiper {
     width: 100vw;
     height: 400px;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100vw;
     height: 400px;
 
-  }
+}
+
+    /* game section starts here */
+
+.games {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
