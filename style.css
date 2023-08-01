@@ -1,184 +1,192 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    background-color: darkgrey;
-    color: rgb(230, 237, 243);
-    position: relative;
+html,
+body {
+  background-color: darkgrey;
+  color: rgb(230, 237, 243);
+  position: relative;
 }
-        /* Navbar style starts here */
+/* Navbar style starts here */
 .navbar {
-    display: flex;
-    height: 80px;
-    width: 100vw;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(12,17,23);
-    padding: 1rem;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
+  display: flex;
+  height: 80px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 17, 23);
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
-        /* Logo syle*/
+/* Logo syle*/
 @keyframes logo {
-    0% {text-shadow: 1px 1px 3px darkgray;}
-    50% {text-shadow: 2px 2px 4px darkgray;}
-    100% {text-shadow: 3px 3px 5px darkgray;}
+  0% {
+    text-shadow: 1px 1px 3px darkgray;
+  }
+  50% {
+    text-shadow: 2px 2px 4px darkgray;
+  }
+  100% {
+    text-shadow: 3px 3px 5px darkgray;
+  }
 }
 .logo {
-    font-family: 'Tektur', cursive;
-    font-size: 1.5rem;
-    animation: logo 3s ease-in-out  infinite;  
+  font-family: "Tektur", cursive;
+  font-size: 1.5rem;
+  animation: logo 3s ease-in-out infinite;
 }
-        /* Links style */
+/* Links style */
 .links {
-    text-decoration: none;
-    color: rgb(230, 237, 243);
-    padding: 5px;
-    transition: all 0.25s;
+  text-decoration: none;
+  color: rgb(230, 237, 243);
+  padding: 5px;
+  transition: all 0.25s;
 }
 
 .links:hover {
-    background-color: rgb(230, 237, 243);
-    color: rgb(12,17,23);
-    border-radius: 12px;
+  background-color: rgb(230, 237, 243);
+  color: rgb(12, 17, 23);
+  border-radius: 12px;
 }
-        /* Main section starts here */
+/* Main section starts here */
 .container {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* swiper style here */
 .swiper {
-    width: 100vw;
-    height: 400px;
+  width: 100vw;
+  height: 400px;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100vw;
-    height: 400px;
-
+  display: block;
+  width: 100vw;
+  height: 400px;
 }
 
-    /* game section starts here */
+/* game section starts here */
 
 .games {
-    margin: 20px 10px;
-    padding: 10px 5px;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    gap: 1.3rem;
-    grid-template-columns: repeat(4, 1fr);
-    position: relative;
+  margin: 20px 10px;
+  padding: 10px 5px;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
 }
 
 .child {
-    height: 200px;
-    width: 170px;
-    transition: box-shadow 0.15s;
-    cursor: pointer;
+  height: 200px;
+  width: 170px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
 }
 
 .child:hover {
-    box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px black;
 }
 
 .img {
-    height: inherit;
-    width: inherit; 
+  height: inherit;
+  width: inherit;
 }
 
-    /*  Hidden starts here */
+/*  Hidden starts here */
 .hidden {
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba
-    (255, 255, 255, 0.3));
-    backdrop-filter: blur(2rem);
-    box-shadow: 5px 5px 5px black;
-    height: 50vh;
-    width: 50vw;
-    position: fixed;
-    top: 25%;
-    left: 25%;
-    z-index: 2;
-    visibility: hidden;
-    display: flex;
-    
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba (255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  box-shadow: 5px 5px 5px black;
+  height: 50vh;
+  width: 50vw;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 2;
+  visibility: hidden;
+  display: flex;
 }
 
 .hidden img {
-    height: 90%;
-    width: 45%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  height: 90%;
+  width: 45%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.info { 
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    font-family: Bebas;
-    background-color: rgba(0, 0, 0, 0.3); 
-    padding: 10px;
-    margin-top: 14px;
+.info {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  font-family: Bebas;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-top: 14px;
 }
 
 .gameName {
-    font-size: 20px;
-    padding: 5px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .price {
-    font-size: 15px;
-    padding: 5px;
+  font-size: 15px;
+  padding: 5px;
 }
 
 .details {
-    font-size: 12px;
-    margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .btn {
-    color: rgb(230, 237, 243);
-    width: 40px;
-    height: 20px;
-    background-color: rgba(12,17,23, 0.4);
-    border: 1px solid rgb(12,17,23);
-    text-align: center;
-    border-radius: 7px; 
-    padding-bottom: 3px;
+  color: rgb(230, 237, 243);
+  width: 40px;
+  height: 20px;
+  background-color: rgba(12, 17, 23, 0.4);
+  border: 1px solid rgb(12, 17, 23);
+  text-align: center;
+  border-radius: 7px;
+  padding-bottom: 3px;
 }
 
 .btn-add {
-    color: rgb(230, 237, 243);
-    width: 80px;
-    height: 20px;
-    background-color: rgba(12,17,23, 0.4);
-    border: 1px solid rgb(12,17,23);
-    text-align: center;
-    border-radius: 7px; 
-    transition: all 0.15s;
-    
+  color: rgb(230, 237, 243);
+  width: 80px;
+  height: 20px;
+  background-color: rgba(12, 17, 23, 0.4);
+  border: 1px solid rgb(12, 17, 23);
+  text-align: center;
+  border-radius: 7px;
+  transition: all 0.15s;
 }
 
-.btn:hover, .btn-add:hover {
-    background-color: rgba(230, 237, 243, 0.4);
-    color: rgb(12,17,23);
-    border-radius: 12px;
+.btn:hover,
+.btn-add:hover {
+  background-color: rgba(230, 237, 243, 0.4);
+  color: rgb(12, 17, 23);
+  border-radius: 12px;
 }
