@@ -93,21 +93,27 @@ let gameInfo = {
       "Tekken 7 is a fighting game developed and published by Bandai Namco Entertainment.",
   },
 };
+
+// Select needed elements
 const hid = document.getElementById("hidden");
 const hidImg = document.getElementById("hid-img");
 const gameName = document.getElementById("gameName");
 const price = document.getElementById("price");
 const details = document.getElementById("details");
 
+ // make a constructor function to dynamically change the images on click 
 function showHide(id) {
   this.id = id;
   const source = id.src;
+
+  // change the visibility of hidden section on click
   if (hid.style.visibility === "visible") {
     hid.style.visibility = "hidden";
   } else {
     hid.style.visibility = "visible";
     hidImg.src = source;
 
+    // switch cases to manipulate the data inside info div of hidden
     switch (id) {
       case child1:
         gameName.innerHTML = gameInfo.child1.name;
