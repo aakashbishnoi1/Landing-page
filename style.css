@@ -103,6 +103,7 @@ html, body {
     width: inherit; 
 }
 
+    /*  Hidden starts here */
 .hidden {
     background-color: red;
     height: 50vh;
@@ -113,11 +114,13 @@ html, body {
     z-index: 2;
     visibility: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .hidden img {
-    height: 25vh;
-    width: 25vh;
+    height: 90%;
+    width: 45%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
