@@ -107,9 +107,17 @@ html, body {
     background-color: red;
     height: 50vh;
     width: 50vw;
-    position: absolute;
+    position: fixed;
     top: 25%;
     left: 25%;
     z-index: 2;
-    display: none;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden img {
+    height: 25vh;
+    width: 25vh;
 }
