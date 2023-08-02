@@ -13,7 +13,7 @@ body {
 /* Navbar style starts here */
 .navbar {
   display: flex;
-  height: 80px;
+  height: 3rem;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +23,7 @@ body {
   top: 0px;
   left: 0px;
   z-index: 2;
+  font-size: 1rem;
 }
 /* Logo syle*/
 @keyframes logo {
@@ -38,7 +39,7 @@ body {
 }
 .logo {
   font-family: "Tektur", cursive;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   animation: logo 3s ease-in-out infinite;
 }
 /* Links style */
@@ -53,11 +54,6 @@ body {
   background-color: rgb(230, 237, 243);
   color: rgb(12, 17, 23);
   border-radius: 12px;
-}
-
-.res {
-      min-height: 5rem;
-      display: none;
 }
 
 #bars {
@@ -260,4 +256,50 @@ footer h6 {
   text-decoration: none;
   color: rgb(230, 237, 243);
   padding: 10px;
+}
+
+  /* Media queries */
+
+ /* Making Navbar Responsive*/
+  @media (max-width:370px) {
+    .logo {
+      font-size: 1em;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+        backdrop-filter: blur(1.5rem);
+        width: 100vw;
+        min-height: 100px;
+        z-index: 3;
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        display: none;
+        transition: all 0.15s;
+    }
+
+    .links {
+      color: rgb(12, 17, 23);
+    }
+
+    .nav-links:hover {
+        box-shadow: 2px 2px 5px black;
+    }
+
+    .links:hover {
+        box-shadow: 2px 2px 5px black;
+        border-bottom: 1px solid black;
+        border-radius: 0px;
+    }
+
+    #bars {
+        display: block;
+        z-index: 4;
+        cursor: pointer;
+    }
 }
