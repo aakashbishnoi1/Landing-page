@@ -85,6 +85,19 @@ body {
 }
 
 /* game section starts here */
+.game-text {
+  height: 40px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: Bebas, Ariel; 
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  text-shadow: 2px 2px 5px black;
+}
 
 .games {
   margin: 20px 10px;
@@ -130,21 +143,18 @@ body {
   z-index: 2;
   visibility: hidden;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .hidden img {
-  height: 90%;
+  height: 17rem;
   width: 45%;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  
 }
 
 .info {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  height: 16rem;
+  height: 17rem;
   width: 11rem;
   font-family: Bebas, Ariel;
   background-color: rgba(0, 0, 0, 0.3);
