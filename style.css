@@ -54,6 +54,21 @@ body {
   color: rgb(12, 17, 23);
   border-radius: 12px;
 }
+
+.res {
+      min-height: 5rem;
+      display: none;
+}
+
+#bars {
+  font-weight: 600;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+  display: none;
+}
+
+
 /* Main section starts here */
 .container {
   min-height: 60rem;
@@ -93,21 +108,22 @@ body {
   align-items: center;
   font-weight: 800;
   font-size: 24px;
-  font-family: Bebas, Ariel; 
+  font-family: Bebas, Ariel;
   background-color: rgba(0, 0, 0, 0.3);
   margin-top: 10px;
   text-shadow: 2px 2px 5px black;
 }
 
 .games {
-  margin: 20px 10px;
-  padding: 10px 5px;
-  min-height: 50rem;
-  max-width: 50rem;
+  height: 44rem;
+  width: 100vw;
   display: grid;
-  gap: 1.3rem;
+  gap: 1em;
   grid-template-columns: repeat(4, 1fr);
   position: relative;
+  padding-top: 10px;
+  padding-left: 1em;
+  justify-content: center;
 }
 
 .child {
@@ -150,7 +166,6 @@ body {
 .hidden img {
   height: 17rem;
   width: 45%;
-  
 }
 
 .info {
@@ -178,7 +193,7 @@ body {
 .details {
   font-size: 12px;
   margin-bottom: 10px;
-  padding: .4rem; 
+  padding: 0.4rem;
 }
 
 .btn {
@@ -190,7 +205,7 @@ body {
   text-align: center;
   border-radius: 7px;
   padding-bottom: 3px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .btn-add {
@@ -201,7 +216,6 @@ body {
   border: none;
   text-align: center;
   border-radius: 7px;
-  transition: all 0.15s;
 }
 
 .btn:hover,
@@ -236,7 +250,7 @@ footer h6 {
   text-align: center;
 }
 
-.contact h4{
+.contact h4 {
   padding: 10px;
   font-weight: 600;
 }
