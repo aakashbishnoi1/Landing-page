@@ -304,6 +304,14 @@ footer h6 {
         z-index: 4;
         cursor: pointer;
     }
+
+    /* responsive swiper */
+    .swiper {
+      height: 200px;
+    }
+    .swiper-slide img {
+      height: 200px;
+    }
 }
 
   /* Responsive footer */
@@ -333,4 +341,22 @@ footer h6 {
     width: 100vw;
     height: 50%;
   }
+  /* responsive swiper */
+  .swiper {
+    height: 250px;
+  }
+  .swiper-slide img {
+    height: 250px;
+  }
 }
+
+ /* Responsive swiper */
+ @media (max-width:580px) {
+  /* responsive swiper */
+  .swiper {
+    height: 320px;
+  }
+  .swiper-slide img {
+    height: 320px;
+  }
+ }
