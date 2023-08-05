@@ -412,6 +412,12 @@ footer h6 {
       height: 180px;
       max-width: 150px;
     }
+
+    /* Hidden section */
+    .hidden {
+      left: 10%;
+    }
+
   }
 
   @media (max-width:500px) {
@@ -470,6 +476,27 @@ footer h6 {
     }
   }
 
+  /* responsive hidden section */
+  @media (max-width:455px) {
+    .hidden {
+      width: 20rem;
+      height: 17rem;
+    }
+  }
+
+  @media (max-width:368px) {
+    .hidden {
+      width: 18rem;
+      height: 17rem;
+    }
+  }
+
+  @media (max-width:325px) {
+    .hidden {
+      width: 16rem;
+      height: 17rem;
+    }
+  }
   
 
 
