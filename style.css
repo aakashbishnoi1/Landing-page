@@ -146,6 +146,7 @@ body {
     rgba (255, 255, 255, 0.3)
   );
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   box-shadow: 5px 5px 5px black;
   min-height: 19rem;
   width: 25rem;
