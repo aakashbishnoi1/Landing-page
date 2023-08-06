@@ -4,7 +4,7 @@
 
 ## About the project 
 
-This is a landing-page themed on an imaginary video-game selling website GameShop, you can choose the game you like from available games and check the info and buy it if you like or add it to the cart.
+The theme of this page is an imaginary video-game selling website GameShop, you can choose the game you like from available games and check the info and buy it if you like or add it to the cart.
 
 ## Known problems 
 
